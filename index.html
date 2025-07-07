@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iloveyou 💖</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- 🎵 Background Music -->
+    <audio id="bg-music" loop>
+        <source src="music/inner-child.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- 🎵 Play/Pause Button -->
+    <button id="music-btn">Play Music</button>
+
+    <header>
+        <h1>To the Most Beautiful Person</h1>
+        <p>Before you scroll down, please hit play on that song first, okay?
+            <br> This moment, and everything that follows, is just for you. Always
+        </p>
+    </header>
+
+    <section class="gallery">
+        <h2>I LOVE YOU, BABY!</h2>
+        <div class="slider-container">
+            <img id="slide-image" src="images/her1.jpg" alt="Photo 1" />
+            <p id="slide-caption">Hi baby, you are absolutely beautiful po. Seriously, don't ever say you're ugly ah?..
+                I
+                genuinely don't see it, not even a little bit. You have such a beautiful heart and soul, and you're
+                stunning on the outside too. I love every single part of you simply because it's you, and I'll always,
+                always choose you.</p>
+            <button id="next-btn">Next</button>
+        </div>
+    </section>
+
+    <section class="letter">
+        <h2>Baby, after you read this message po, kindly pause the music ah? Mwuah!</h2>
+        <p>
+            This little website is my way of telling you how deeply appreciated, adored, and loved you truly are.
+            Every photo of you reminds me just how lucky I am to have you in my life.
+        </p>
+
+        <p>
+            To be honest, I don’t even know how to fully express or construct these words, but I’ll try my best, because
+            I really want you to know all of it.
+        </p>
+
+        <p>
+            Baby ko, I'm so thankful that I met you, kahit online lang kita nakilala. I'm happy that you noticed me,
+            hehe.
+            I honestly didn’t expect that we’d end up having such long, meaningful conversations. Kwentuhan, tawanan,
+            supporting each other in everything,
+            and even those nonsense talks that eventually became a part of my everyday life.
+        </p>
+
+        <p>
+            Hanggang sa umabot sa point na “parang iba na 'to ah,” kasi napapa-ibig na ako.
+        </p>
+
+        <p>
+            Happy crush lang sana kita noon, kasi nga go lang ako kung saan ka masaya. Masaya na ako as long as
+            nakakausap kita.
+            Goods na ako don. At least we kept in contact. Pero habang tumatagal ang usapan natin, mas lalo kitang
+            nagustuhan.
+            I’ve gained so much from you. I’m constantly inspired by everything you do, by your amazing talents.
+            And with every moment, mas nakikilala pa kita and I love what I keep discovering.
+        </p>
+
+        <p>
+            I know we’ve never stood side by side… never held hands… never shared a quiet moment in the same room.
+            But somehow, you’ve become my favorite feeling in this world. And even though it's all through a screen,
+            you’ve made everything feel so real.
+        </p>
+
+        <p>
+            I love you.
+        </p>
+
+        <p>
+            I love the way you play your guitar. Even from miles away, it feels like you're strumming the strings of my
+            heart.
+            Each note you play is like a secret message meant just for me. Like your hands were meant to serenade my
+            soul from the other side of the world.
+        </p>
+
+        <p>
+            And when you dance… it’s pure poetry. Even if it’s just a video call or a short clip, I can’t take my eyes
+            off you.
+            You move so effortlessly, so beautifully... it’s like you’re dancing just for me. And honestly? I’d watch
+            you sway forever.
+        </p>
+
+        <p>
+            I love you, and I love the way you play your Rubik’s Cube. The way your fingers move so quickly and
+            confidently,
+            solving something so complex like it’s second nature—it amazes me every time.
+            I see how your mind works... sharp, focused, and brilliant. Every twist and turn is like watching art in
+            motion.
+        </p>
+
+        <p>
+            Even when you’re just casually solving it while we talk, you don’t even realize how mesmerizing you look.
+            It’s not just impressive, it’s oddly comforting. Like your own little language of calm and control.
+            And I love witnessing it.
+        </p>
+
+        <p>
+            But your voice... your voice is everything. Especially when you sing.
+            It’s like time slows down just to let me listen.
+            Even through a screen, your voice reaches straight into my heart.
+            You don’t just sing songs, you sing me into a daydream I never want to wake up from.
+        </p>
+
+        <p>
+            And the way you draw… the grace in every movement of your hand, the way your sketches come to life.. it’s
+            hypnotizing.
+            Every line you draw feels like a window into your soul, and I fall even deeper with every stroke.
+        </p>
+
+        <p>
+            I love everything about you. Everything.
+        </p>
+
+        <p>
+            And the wildest part? I’ve fallen this deeply without ever even holding you.
+            But I’ve seen your heart, I’ve heard your laughter, and I’ve felt your presence and that’s more real than
+            anything I’ve ever known.
+        </p>
+
+        <p>
+            You’ve taken my heart, right through the screen... and I’m yours, completely.
+        </p>
+
+        <p>
+            So until the day I get to kiss you for real, I’ll keep loving you like this 
+            fiercely, faithfully, and across every mile that tries to keep us apart.
+        </p>
+    </section>
+
+
+    <!-- 💍 Proposal Section -->
+    <section class="proposal">
+        <h2>One More Thing...</h2>
+        <button id="ask-btn">Click Me 💖</button>
+    </section>
+
+    <!-- 💬 Modal -->
+    <div id="proposal-modal" class="proposal-modal">
+        <div class="proposal-modal-content">
+            <h2>Would you do me the honor of being my girlfriend?</h2>
+            <div class="proposal-buttons">
+                <button onclick="answerProposal('Yes')">Yes</button>
+                <button onclick="answerProposal('I do')">I do</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 💞 Surprise Video -->
+    <div id="video-container" style="display: none; margin-top: 40px;">
+        <video id="love-video" width="640" controls autoplay>
+            <source src="videos/iloveyou.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <footer>
+        <p>Created with endless love | July 8, 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
